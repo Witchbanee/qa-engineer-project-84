@@ -14,3 +14,211 @@
     Кнопки "Previous" нету на первой странице каталога.
   actual-result: |
     Кнопки "Previous" и "Next" доступны на первой странице. "Previous" не работает.
+    
+- summary: |
+    При отключеном пункте фильтра "In Stock" пропадают все товары
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. На пункте фильтра "In Stock" стоит галочка
+    3. Снять галочку с пунка фильтра "In Stock"
+  expected-result: |
+    Все товары отображаются
+  actual-result: |
+    Все товары пропадают
+    
+- summary: |
+    При смене языка переводится не всё содержимое сайта
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Language" в шапке сайта
+    3. Выбрать "Russian"
+  expected-result: |
+    Все содержимое сайта переведено на выбранный язык
+  actual-result: |
+    Переводится не всё содержимое сайта
+    
+- summary: |
+    В меню выбора языка сайта иконка у "English" не отображается
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Language" в шапке сайта
+    3. Убедиться что иконка у "English" не загружается
+  expected-result: |
+    Иконка языка "English" отображается
+  actual-result: |
+    Иконка языка "English" не отображается, скриншот - English-icon.jpg
+    
+- summary: |
+    Нет возможности фильтрации товара по рейтингу
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Убедиться что фильтрация товара по рейтингу не реализована
+  expected-result: |
+    Можно отфильтровать товар по рейтингу
+  actual-result: |
+    Функционал не реализован
+    
+- summary: |
+    В фильтр по цене есть возможность ввести отрицательное значение
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Вводим отрицательно значение
+  expected-result: |
+    Фильтр не позволяет ввести отрицательное значение. Выводится сообщение о том что значение не может быть отрицательным
+  actual-result: |
+    Отрицательно значение вводится
+    
+- summary: |
+    Нет возможности сбросить фильтрацию товара по категории
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Выбираем любую категорию в фильтре товара
+  expected-result: |
+    Есть возможность сбросить категорию
+  actual-result: |
+    Сбросить категорию нельзя, для этого нужно перезагружать страницу
+    
+- summary: |
+   Хэштэг в карточке товара не работает
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Нажать на любую карточку товара перейти в неё
+    3. Нажать на хэштэг
+  expected-result: |
+    Открывается главная страница с фильтром по нажатому хэштегу
+  actual-result: |
+    Хэштэг не срабатывает. В адресную строку добавляется символ "#".
+    
+ ---
+- summary: |
+    Кнопка "Previous" отоборажается на первой странице каталога товаров
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Next"
+    3. Нажать кнопку "Previous"ю
+    4. Ещё раз нажать кнопку "Previous"
+    5. Убедиться что находимся на первой странице каталога и кнопка не пропадает
+  expected-result: |
+    Кнопки "Previous" нету на первой странице каталога.
+  actual-result: |
+    Кнопки "Previous" и "Next" доступны на первой странице. "Previous" не работает.
+    
+- summary: |
+    При отключеном пункте фильтра "In Stock" пропадают все товары
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. На пункте фильтра "In Stock" стоит галочка
+    3. Снять галочку с пунка фильтра "In Stock"
+  expected-result: |
+    Все товары отображаются
+  actual-result: |
+    Все товары пропадают
+    
+- summary: |
+    При смене языка переводится не всё содержимое сайта
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Language" в шапке сайта
+    3. Выбрать "Russian"
+  expected-result: |
+    Все содержимое сайта переведено на выбранный язык
+  actual-result: |
+    Переводится не всё содержимое сайта
+    
+- summary: |
+    В меню выбора языка сайта иконка у "English" не отображается
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Language" в шапке сайта
+    3. Убедиться что иконка у "English" не загружается
+  expected-result: |
+    Иконка языка "English" отображается
+  actual-result: |
+    Иконка языка "English" не отображается, скриншот - English-icon.jpg
+    
+- summary: |
+    Нет возможности фильтрации товара по рейтингу
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Убедиться что фильтрация товара по рейтингу не реализована
+  expected-result: |
+    Можно отфильтровать товар по рейтингу
+  actual-result: |
+    Функционал не реализован
+    
+- summary: |
+    В фильтр по цене есть возможность ввести отрицательное значение
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Вводим отрицательно значение
+  expected-result: |
+    Фильтр не позволяет ввести отрицательное значение. Выводится сообщение о том что значение не может быть отрицательным
+  actual-result: |
+    Отрицательно значение вводится
+    
+- summary: |
+    Нет возможности сбросить фильтрацию товара по категории
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Выбираем любую категорию в фильтре товара
+  expected-result: |
+    Есть возможность сбросить категорию
+  actual-result: |
+    Сбросить категорию нельзя, для этого нужно перезагружать страницу
+    
+- summary: |
+   Кнопка "Clear cart" очищает корзину только в текущей сессии
+  environment: |
+    Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
+    ОС Windows 10 (x64)
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
+    2. Добавляем любой товар в корзину
+    3. Переходим в корзину и нажимаем кнопку "Clear cart"
+    4. Перезагружаем страницу
+  expected-result: |
+    Корзина очищена
+  actual-result: |
+    Весь товар добавленный в корзину появляется снова, корзина не очищена
