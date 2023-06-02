@@ -39,7 +39,7 @@ bugreports:
   actual-result: |
     Кнопка "Next" на странице каталога пропадает
     
- - summary: |
+  - summary: |
     В меню выбора категории доступно пустое поле для выбора
   environment: |
     Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
@@ -54,15 +54,14 @@ bugreports:
     
  - summary: |
     При вводе некорректного слова в поиске товара в определенной категории, отображается весь список товаров
-  environment: |
+ environment: |
     Google Chrome Версия 114.0.5735.91 (Официальная сборка), (64 бит)
     ОС Windows 10 (x64)
-  steps-to-reproduce: |
+ steps-to-reproduce: |
     1. Открыта главная страница сайта - https://hexlet-products-store.vercel.app/
     2. В меню выбора категории выбираем "Smartphones"
     3. В поиск вводим "fdg43gfdg"
-  expected-result: |
+ expected-result: |
     Отображается пустая страница с надписью "Товар не найден"
-  actual-result: |
+ actual-result: |
     Отображается каталог с перемешенными товарами
-  
