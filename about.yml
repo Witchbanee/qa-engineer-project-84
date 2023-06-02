@@ -1,15 +1,21 @@
 ---
-name: Ilona Maskova # ваше имя
+name: Pavel Danshin
 job: QA Engineer
 level: junior
-email: ilona@hexlet.io
+email: danshin-pavel@mail.ru
 description: |
-  Это текст-описание в свободной форме. Здесь можно рассказать пару интересных фактов про себя
-
-  Текст может быть написан в несколько абзацев
+  Машинист экструдера, мечтающий попасть на должность тестировщика :O
 skills:
   - функциональное тестирование
   - написание багрепортов
-  - Linux
   - слепая печать
-  - английский язык C1
+  - HTML5, CSS3, SCSS;
+  - Flexbox, Grid;
+  - Gulp;
+  - JS (Основы);
+  - БЭМ;
+  - Figma;
+  - Pixel Perfect;
+  - Mobile First;
+  - Опыт кроссбраузерной, адаптивной и валидной вёрстки.
+  
