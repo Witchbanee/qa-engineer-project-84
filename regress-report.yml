@@ -21,16 +21,16 @@ test-cases:
     status: pass
    
   - summary: |
-    Проверка поиска товара по выбранному бренду
-  status: pass
+      Проверка поиска товара по выбранному бренду
+    status: pass
   
   - summary: |
-    Проверка поиска товара по цене
-  status: pass
+      Проверка поиска товара по цене
+    status: pass
   
   - summary: |
-    Проверка фильтрации товара по пункту фильтра "In stock"
-  status: fail
+      Проверка фильтрации товара по пункту фильтра "In stock"
+    status: fail
   
 bugreports:
   - summary: |
