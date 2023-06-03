@@ -8,10 +8,6 @@
   status: pass
   
 - summary: |
-    Проверка возможности фильтрации товара
-  status: pass
-  
-- summary: |
     Проверка откртытия карточки товара
   status: pass
   
